@@ -3,10 +3,7 @@ let elem = document.querySelector(".container")
 design_select.onchange = function() {
     let variantDesighn = document.querySelector('#design_select').value;
     switch(variantDesighn) {
-        case "white":
-            clearClasses();
-            elem.classList.add("white");
-        break;
+
         case "blue":
             clearClasses();
             elem.classList.add("blue");
@@ -14,6 +11,10 @@ design_select.onchange = function() {
         case "dark":
             clearClasses();
             elem.classList.add("dark");
+        break;
+        case "white":
+            clearClasses();
+            elem.classList.add("white");
         break;
     }
 }

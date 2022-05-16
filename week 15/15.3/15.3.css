@@ -4,8 +4,8 @@
 }
 
 .blue {
-    background-color:#3498db;
-    color: darkblue;
+    background-color:#45a2e0;
+    color: rgb(3, 3, 107);
 }
 
 .white {
@@ -14,5 +14,5 @@
 
 .dark {
     background-color: black;
-    color: rgb(224, 240, 53);
+    color: rgb(217, 235, 26);
 }
