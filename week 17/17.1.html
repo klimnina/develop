@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Фамилия:</p>
+    <input type="text" id="name"><br>
+    <p>Имя:</p>
+    <input type="text" id="surname"><br>
+    <p>Отчество:</p>
+    <input type="text" id="patronymic"><br>
+<script>
+    getName();
+function getName () {
+    let askName = prompt('Введите ФИО');
+    let arrName = askName.split(" ");
+    let name = document.querySelector("#name");
+    let surname = document.querySelector("#surname");
+    let patronymic = document.querySelector("#patronymic");
+    let arrNameNew = [];
+ 
+    for (i = 0; i < arrName.length; i++) {
+        if (arrName[i].trim() !== "") {
+            let item = arrName[i][0].toUpperCase() + arrName[i].slice(1).toLowerCase();
+            arrNameNew.push(item);
+        };
+    };
+ 
+    name.value = arrNameNew[0];
+    surname.value= arrNameNew[1];
+    patronymic.value= arrNameNew[2];
+    
+}
+</script>
+</body>
+</html>
